@@ -3,7 +3,7 @@ import { ChevronRight, Monitor, FlaskConical, Library, Trophy, Palette, Bus } fr
 import { Button } from "@/components/ui/button";
 
 const SPORTS_GALLERY = [
-  "https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=600&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=600&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1560012057-4372e14c5085?q=80&w=600&auto=format&fit=crop",

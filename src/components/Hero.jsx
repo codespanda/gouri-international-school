@@ -49,8 +49,8 @@ export default function Hero() {
         <div className="relative">
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop"
-              alt="Students exploring a globe together"
+              src="/Images/2.png"
+              alt="Classroom at Gouri International School"
               className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[420px]"
             />
           </div>

@@ -14,7 +14,7 @@ const NEWS = [
     month: "MAY",
     title: "Sports Day Celebration",
     desc: "Cheering, teamwork and unforgettable moments at our Annual Sports Day.",
-    img: "https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=700&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=700&auto=format&fit=crop",
   },
   {
     day: "30",
