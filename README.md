@@ -1,16 +1,66 @@
-# React + Vite
+# Gouri International School
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive marketing website for Gouri International School, built with React, Vite, Tailwind CSS, and shadcn-style UI components.
 
-Currently, two official plugins are available:
+**Live site:** [school.codespanda.com](https://school.codespanda.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Gouri International School homepage](docs/screenshot.png)
 
-## React Compiler
+## Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Sticky header with utility bar and mobile navigation
+- Hero banner with key stats
+- About / "More Than a School" overview
+- Academics — program cards for every stage (Early Years to Senior School)
+- Campus facilities gallery, including rotating photo tiles for Smart Classrooms and Sports & Playgrounds
+- Why parents choose us + testimonials carousel
+- News & Events
+- Admissions call-to-action
+- Footer with contact details and quick links
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- [React 19](https://react.dev/) + [Vite](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [shadcn](https://ui.shadcn.com/)-style UI primitives (`src/components/ui`)
+- [lucide-react](https://lucide.dev/) icons
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+The dev server runs at `http://localhost:5173`.
+
+## Build
+
+```bash
+npm run build
+```
+
+Outputs a production build to `dist/`.
+
+## Deploy
+
+The site deploys to GitHub Pages via [`gh-pages`](https://www.npmjs.com/package/gh-pages):
+
+```bash
+npm run deploy
+```
+
+This builds the project and publishes `dist/` to the `gh-pages` branch. GitHub Pages is configured to serve the custom domain `school.codespanda.com` (see `public/CNAME`).
+
+## Project structure
+
+```
+src/
+  components/       Page sections (Header, Hero, AboutSection, ...)
+  components/ui/    Reusable UI primitives (Button, Card)
+  lib/utils.js       cn() helper for class merging
+public/
+  Images/            School photos used across the site
+docs/
+  screenshot.png     Homepage screenshot used in this README
+```
