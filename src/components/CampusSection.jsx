@@ -9,11 +9,13 @@ const SPORTS_GALLERY = [
   "https://images.unsplash.com/photo-1560012057-4372e14c5085?q=80&w=600&auto=format&fit=crop",
 ];
 
+const CLASSROOM_GALLERY = ["/Images/1.png", "/Images/2.png"];
+
 const FACILITIES = [
   {
     icon: Monitor,
     label: "Smart Classrooms",
-    img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600&auto=format&fit=crop",
+    gallery: CLASSROOM_GALLERY,
   },
   {
     icon: FlaskConical,
@@ -63,7 +65,7 @@ function FacilityTile({ icon: Icon, label, img }) {
   );
 }
 
-function SportsGalleryTile({ icon: Icon, label, gallery }) {
+function GalleryTile({ icon: Icon, label, gallery }) {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
@@ -131,7 +133,7 @@ export default function CampusSection() {
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {FACILITIES.map((facility) =>
             facility.gallery ? (
-              <SportsGalleryTile key={facility.label} {...facility} />
+              <GalleryTile key={facility.label} {...facility} />
             ) : (
               <FacilityTile key={facility.label} {...facility} />
             )
